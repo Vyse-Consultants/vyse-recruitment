@@ -49,26 +49,25 @@ nav a:hover {
 }
 
 .hero-image {
-  background: url('https://www.teamplusindia.in/wp-content/uploads/2022/12/A-Complete-Guide-to-Internal-Recruitment.jpg') center/cover no-repeat;
+  background: url('recruit.jpg') center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 100px 20px;
   background-attachment: fixed;
+  border-radius: 10px;
+  margin: 30px auto;
 }
 
-
 .hero-image h2 {
-  font-size: 42px;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 5px #000;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .hero-image p {
   font-size: 20px;
-  max-width: 600px;
-  margin: auto;
-  text-shadow: 1px 1px 4px #000;
 }
+
 
 /* Service Section */
 .service-detail {
