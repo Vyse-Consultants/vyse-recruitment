@@ -48,14 +48,14 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Hero Image */
 .hero-image {
-  background: url('https://images.unsplash.com/photo-1590650516494-0c8e4c9ff36d?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  background: url('https://cdn.pixabay.com/photo/2020/03/01/16/18/recruitment-4893182_1280.jpg') center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 100px 20px;
   background-attachment: fixed;
 }
+
 
 .hero-image h2 {
   font-size: 42px;
