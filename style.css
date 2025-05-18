@@ -8,14 +8,14 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
-  background: #f9f9f9;
+  background: #f5f7fa;
   color: #333;
   scroll-behavior: smooth;
 }
 
 .container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -25,15 +25,15 @@ header {
   padding: 20px 0;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
 }
 
 nav a {
@@ -43,91 +43,96 @@ nav a {
   font-weight: 500;
 }
 
-.hero {
-  background: #1e90ff;
-  color: #fff;
-  text-align: center;
-  padding: 80px 20px;
+nav a:hover {
+  text-decoration: underline;
 }
 
-.hero .btn {
-  display: inline-block;
-  background: #fff;
-  color: #1e90ff;
-  padding: 10px 20px;
-  margin-top: 20px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
-}
-
-section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-#services .services-menu {
+/* Hero section with image */
+.hero-image {
+  background: url('https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+  color: white;
+  height: 300px;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  gap: 15px;
-  margin-top: 30px;
+  position: relative;
+  text-align: center;
 }
 
-.services-menu a {
-  display: inline-block;
-  background: #1e90ff;
-  color: #fff;
-  padding: 10px 15px;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.services-menu a:hover {
-  background: #156fc4;
-}
-
-.service-detail {
-  background: #fff;
-  padding: 40px 20px;
-  margin: 20px 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+.hero-image .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
   border-radius: 10px;
 }
 
-.service-detail h3 {
-  font-size: 26px;
-  margin-bottom: 15px;
+.hero-image h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-image p {
+  font-size: 18px;
+}
+
+/* Service Detail */
+.service-detail {
+  background: #fff;
+  padding: 60px 20px;
+  margin: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.service-detail h2 {
+  font-size: 32px;
+  text-align: center;
   color: #1e90ff;
+  margin-bottom: 20px;
 }
 
-form {
-  max-width: 500px;
-  margin: auto;
+.service-detail .intro {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #555;
 }
 
-form input,
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
+.services-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-form button {
-  background: #1e90ff;
-  color: #fff;
-  border: none;
-  padding: 12px 20px;
+.card {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 20px;
+  color: #1e90ff;
+  margin-bottom: 10px;
+}
+
+.card p {
   font-size: 16px;
-  cursor: pointer;
-  border-radius: 4px;
+  color: #555;
 }
 
+/* Footer */
 footer {
   background: #222;
   color: #fff;
   text-align: center;
   padding: 20px 0;
-  margin-top: 40px;
+  font-size: 14px;
+  margin-top: 60px;
 }
